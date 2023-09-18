@@ -1,0 +1,55 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <h1>🧑‍🚀 Hello, Astronaut!</h1>
+      <p>
+        Hello! This is a demo repo to show off Astro's new View Transitions.
+        View transitions have been implemented between the <a href="/blog"
+          >blog index page</a
+        > and individual post pages. You can read my detailed <a
+          href="https://wilchow.com/blog/getting-started-with-astro-3-view-transitions"
+          >blog post</a
+        > or just look through the <a
+          href="https://github.com/javajunky/astro-3-view-transitions-demo"
+          >source code</a
+        > in the blog portion of this demo.
+      </p>
+      <p>
+        Check out my <a href="https://wilchow.com">personal site</a> for more
+        posts about design, development, and other things I'm interested in.
+      </p>
+
+      <h2>Quick Links</h2>
+      <ul>
+        <li>
+          <a
+            href="https://wilchow.com/blog/getting-started-with-astro-3-view-transitions"
+            >Blog Post</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/javajunky/astro-3-view-transitions-demo"
+            >GitHub Repo</a
+          >
+        </li>
+        <li><a href="https://astro.build">Astro</a></li>
+        <li>
+          <a href="https://astro.build/blog/astro-3/">Astro 3 Announcement</a>
+        </li>
+      </ul>
+    </main>
+    <Footer />
+  </body>
+</html>
